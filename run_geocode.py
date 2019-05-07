@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # fw = open(args.outputfile, 'w', encoding='shift_jis')
     fw = args.outputfile
     writer = csv.writer(fw)
-    writer.writerow(header + ['KIYKSH_ADD_IDO', 'KIYKSH_ADD_KEIDO', 'KIYKJI_ADD_KNJ'])
+    writer.writerow(header + ['lat', 'lng', 'addr'])
 
     for row in reader:
         try:
